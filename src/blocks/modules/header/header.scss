@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 40px;
     &-item{
         display: flex;
         justify-content: space-between;
@@ -13,12 +14,37 @@
         text-decoration: none;
         color: $grey;
         transition: 0.3s ease;
+        font-weight: 500;
         &:hover{
             color: $orange;
         }
     }
     }
+.header-cart {
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 82px;
+    &__button {
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: $orange;
+        border: none;
+        border-radius: 100%;
+        background-image: url(../../../img/cart.svg);
+        background-repeat: no-repeat;
+        background-size: 1rem 0.87rem;
+        background-position: center center;
+    }
+    &__count {
+        position: absolute;
+        top: 6px;
+        right: 9px;
+        font-size: 0.5rem;
+        color: $white;
+    }
 }
+
 .logo {
     display: block;
     width: 120px;
