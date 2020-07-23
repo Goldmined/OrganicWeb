@@ -55,4 +55,18 @@ body {
             margin-bottom: 77px;
         }
     }
+    &-visual{
+        box-shadow: 0 0 0 22px transparent, 0 0 0 1px rgba($grey, $alpha);
+        border-radius: 100%;
+        padding: 53px;
+        &__image{
+            border: 1px solid rgba($grey, $alpha);
+            border-radius: 100%;
+            padding: 21px;
+            img{
+                border-radius: 100%;
+                box-shadow: 15px 48px 42px 0px rgba(39,48,15,0.35);
+            }
+        }
+    }
 }

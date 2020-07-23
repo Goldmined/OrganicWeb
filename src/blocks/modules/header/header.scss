@@ -1,25 +1,27 @@
 .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     max-width: 1440px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding-top: 40px;
-    &-item{
+    padding-bottom: 46px;
+    &-item {
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
     }
     &__tel {
+        transition: 0.3s ease;
         text-decoration: none;
         color: $grey;
-        transition: 0.3s ease;
         font-weight: 500;
-        &:hover{
+        letter-spacing: 0.075rem;
+        &:hover {
             color: $orange;
         }
     }
-    }
+}
 .header-cart {
     position: relative;
     width: 2.5rem;
@@ -64,7 +66,7 @@
         text-decoration: none;
         color: $grey;
         transition: 0.3s ease;
-        &:hover{
+        &:hover {
             color: $orange;
         }
     }
